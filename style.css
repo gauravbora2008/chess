@@ -1,0 +1,37 @@
+.title {
+	text-align: center;
+}
+
+.board-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.board-container {
+	width: 616px;
+	height: 615px;
+	border: 2px solid #333;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.box {
+	width: 75px;
+	height: 75px;
+	border: 1px solid;
+}
+
+.box-row:nth-child(odd) .box:nth-child(even),
+.box-row:nth-child(even) .box:nth-child(odd) {
+	background-color: #000;
+}
