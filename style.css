@@ -1,37 +1,102 @@
 .title {
-	text-align: center;
+    text-align: center;
 }
 
 .board-wrapper {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .board-container {
-	width: 616px;
-	height: 615px;
-	border: 2px solid #333;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
+    width: 616px;
+    height: 615px;
+    border: 2px solid #333;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .box {
-	width: 75px;
-	height: 75px;
-	border: 1px solid;
+    width: 75px;
+    height: 75px;
+    border: 1px solid;
+    background: url("Chess_Pieces_Sprite.svg");
+    background-size: 412px;
+}
+
+.box-row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 }
 
 .box-row:nth-child(odd) .box:nth-child(even),
 .box-row:nth-child(even) .box:nth-child(odd) {
-	background-color: #000;
+    background-color: orange;
+}
+
+.no-piece {
+    background: none;
+}
+
+/*Black Pieces positions*/
+.black-pawn {
+    background-position: 73px -69px;
+}
+
+.black-rook {
+    background-position: -271px -69px;
+}
+
+.black-knight {
+    background-position: -203px -69px;
+}
+
+.black-bishop {
+    background-position: 279px -69px;
+}
+
+.black-king {
+    background-position: 348px -69px;
+}
+
+.black-queen {
+    background-position: 6px -69px;
+}
+
+/*White Pieces positions*/
+.white-pawn {
+    background-position: 73px -1px;
+    background-size: 412px;
+}
+
+.white-rook {
+    background-position: -271px 0;
+}
+
+.white-knight {
+    background-position: -203px -1px;
+}
+
+.white-bishop {
+    background-position: 279px -1px;
+}
+
+.white-king {
+    background-position: 348px -1px;
+}
+
+.white-queen {
+    background-position: 6px -1px;
 }
