@@ -33,6 +33,10 @@
     background-size: 412px;
 }
 
+.box.focused {
+    background-color: rgb(206, 135, 0);
+}
+
 .box-row {
     display: -webkit-flex;
     display: -moz-flex;
@@ -43,7 +47,7 @@
 
 .box-row:nth-child(odd) .box:nth-child(even),
 .box-row:nth-child(even) .box:nth-child(odd) {
-    background-color: orange;
+    background-color: rgb(255, 135, 0);
 }
 
 .no-piece {
