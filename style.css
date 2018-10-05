@@ -13,9 +13,10 @@
 }
 
 .board-container {
-    width: 616px;
-    height: 615px;
+    width: 604px;
+    height: 604px;
     border: 2px solid #333;
+    box-sizing: border-box;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -31,6 +32,7 @@
     border: 1px solid;
     background: url("Chess_Pieces_Sprite.svg");
     background-size: 412px;
+    box-sizing: border-box;
 }
 
 .box.focused {
