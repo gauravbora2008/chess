@@ -9,6 +9,14 @@ for (var i = 0; i < box.length; i++) {
     box[i].addEventListener("click", selectBoxClick);
 }
 
+// adding objects for all chess pieces
+// how?
+// every piece will have name, location on board
+// in terms of box_ID, alive (true false) selectedForMove
+// methods for moving piece and and updating the board
+// details to be decided yet
+
+
 // callback function for checking if a box has piece or is empty
 // and also get which piece is there in the box if present
 function selectBoxClick() {
@@ -21,10 +29,12 @@ function selectBoxClick() {
 
     function movePawn() {
         // console.log(nameOfPiece + " is moved from " srcBoxID + " to " + destBoxID);
-        console.log(this);
+        console.log(this.classList);
 
         this.classList.remove("white-pawn");
+        this.classList.add('no-piece');
         possiblePawnMoveDestination.classList.add('white-pawn');
+        possiblePawnMoveDestination.classList.remove('no-piece');
         this.removeEventListener("click", movePawn);
     }
 }
@@ -48,6 +58,8 @@ function nameOfPiece(boxID) {
         return el.className.split(" ").pop();
     } else return null;
 }
+
+making 
 
 // pawn move
 
