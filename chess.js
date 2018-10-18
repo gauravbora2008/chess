@@ -16,6 +16,10 @@ for (var i = 0; i < box.length; i++) {
 // methods for moving piece and and updating the board
 // details to be decided yet
 
+// var Piece = function(name, box_ID, alive) selectedForMove legalMoves {
+// Piece(pawn, 8, alive);
+// }
+
 
 // callback function for checking if a box has piece or is empty
 // and also get which piece is there in the box if present
